@@ -97,7 +97,6 @@ const deleteTodoItem = (id:string) => {
   return (
     <div>
       <InputField onSubmit={addTodo}></InputField>
-      <div>
         {todos.map(todo => (
         <div className='todoContainer'>
             <div className="todoItem" key={todo.id} onClick={() => updateTodoItem(todo.id)}>
@@ -110,7 +109,6 @@ const deleteTodoItem = (id:string) => {
                 Delete
             </button>
         </div>))}
-      </div>
 
     </div>
   );

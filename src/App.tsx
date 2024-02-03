@@ -11,9 +11,8 @@ function App() {
           { title}
         </h1>
       <div className="content">
-        <div>
-          <TodoList />  {/*TodoList component is included here*/}
-        </div>
+        <TodoList />  {/*TodoList component is included here*/}
+
       </div>
     </div>
   );
