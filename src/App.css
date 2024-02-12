@@ -67,8 +67,12 @@
   border-radius: 20px;
   background-color: #f9f9f9;
   flex-grow: 1;
-  padding: 10px;
   margin-right: 10px; /* Add some space between the todo item and the delete button */
+}
+
+.todoItem:hover {
+  border-color: orange;
+  border-width: 5px;
 }
 
 button{
@@ -83,10 +87,6 @@ button{
 .deleteButton {
   background-color: red;
   /* Additional styling for delete button */
-}
-
-.deleteButton :hover {
-  filter: brightness(90%);
 }
 
 .input_box {

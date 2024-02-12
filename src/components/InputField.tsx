@@ -8,7 +8,9 @@ const InputField: React.FC<InputFieldProps> = ({ onSubmit}) => {
 
     const handleSubmit = (e: React.FormEvent) => {
         e.preventDefault();
+        if (inputValue.length > 0) {
         onSubmit(inputValue); // send value to parent component
+        }
         setInputValue(''); // optional: clear input after submit
       };
 
